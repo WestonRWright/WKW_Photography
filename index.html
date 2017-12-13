@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+	<title>WWK Photography</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body ng-app="WWKPhotography">
+
+	<nav class="navbar navbar-default" ng-controller="indexCtrl">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/home">WW Photography</a>
+      </div>
+          
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Engagements<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/Engagements/coleSam">Cole & Sam</a></li>
+                  <li><a href="/Engagements/alexSarah">Alex & Sarah</a></li>
+                  <li><a href="/Engagements/kindraJordan">Kindra & Jordan</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Weddings<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/Weddings/coleSam">Cole & Sam</a></li>
+                  <li><a href="/Weddings/alexSarah">Alex & Sarah</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Families<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/Families/Dawes">Dawes</a></li>
+                  <li><a href="/Families/Burkholders">Burkholders</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Senior Photos<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/SeniorPhotos/Weston">Weston</a></li>
+                  <li><a href="/SeniorPhotos/Jenny">Jenny</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Travel<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/Travel/The-West">The West</a></li>
+                  <li><a href="/Travel/The-Midwest">The Midwest</a></li>
+                  <li><a href="/Travel/Europe">Europe</a></li>
+                  <li><a href="/Travel/Africa">Africa</a></li>
+                  <li><a href="/Travel/Australia">Australia</a></li>
+                  <li><a href="/Travel/National-Parks">National Parks</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Book Me!<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/BookMe/Pricing">Pricing</a></li>
+                  <li><a href="/BookMe/Book-Now">Book Now</a></li>
+                  <li><a href="/BookMe/Contact">Contact Info</a></li>
+                </ul>
+            </li>
+            <li ng-class="{active: isActive('bookMe')}"> <a href="/About-Me">About Me</a></li>
+
+
+
+          <!--  <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li> -->
+
+
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+  <!-- <center><img src="/assets/wwkphotography_logo.jpg" alt="WWKPhotography" style="width:175;height:175px;"></center> -->
+
+  <div ng-view></div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular-route.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/ctrl/homeCtrl.js"></script>
+  <script type="text/javascript" src="js/ctrl/engagementsCtrl.js"></script>
+  <script type="text/javascript" src="js/ctrl/weddingsCtrl.js"></script>
+  <script type="text/javascript" src="js/ctrl/familysCtrl.js"></script>
+  <script type="text/javascript" src="js/ctrl/seniorPhotosCtrl.js"></script>
+  <script type="text/javascript" src="js/ctrl/travelCtrl.js"></script>
+  <script type="text/javascript" src="js/ctrl/bookMeCtrl.js"></script>
+  <script type="text/javascript" src="js/ctrl/aboutMeCtrl.js"></script>
+</body>
+</html>

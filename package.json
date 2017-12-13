@@ -1,0 +1,17 @@
+{
+  "name": "dev",
+  "version": "1.0.0",
+  "description": "express service for innkeeper mongodb",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "dependencies": {
+    "lite-server": "^2.2.2"
+  },
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
